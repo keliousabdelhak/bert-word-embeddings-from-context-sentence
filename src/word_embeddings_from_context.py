@@ -74,7 +74,17 @@ def get_word_embedding(token_vecs_sum,index):
     return token_vecs_sum[index]
 
 
+def show_word_index(text):
+    tokens_tensor, segments_tensors,tokenized_text =text_transform(text)
+    index=[]
+    for i, token_str in enumerate(tokenized_text):
+        index.append((i, token_str))
+    print(index)
 
+
+def show_index_of_word_in_sentence(text,word):
+    tokens_tensor, segments_tensors,tokenized_text =text_transform(text)
+    print(get_word_index_from_sentence(tokenized_text,word,all_index=True))
 
 def get_word_embedding_from_sentence(text,word,all_index=False):
     tokens_tensor, segments_tensors,tokenized_text =text_transform(text)
@@ -95,4 +105,6 @@ def get_word_embedding_from_sentence(text,word,all_index=False):
     return word_embedding
 
 
-print(get_word_embedding_from_sentence("After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank.",'bank',all_index=True))
+#print(get_word_embedding_from_sentence("After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank.",'bank',all_index=True))
+show_word_index("After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank.")
+show_index_of_word_in_sentence("After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank.",'the')
