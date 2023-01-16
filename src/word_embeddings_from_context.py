@@ -88,7 +88,7 @@ def get_word_embedding_from_sentence(text,word,all_index=False):
     if isinstance(index,list):
         word_embedding = []
         for i in index:
-            word_embedding.append(get_word_embedding(token_vecs_sum,i)[:5])
+            word_embedding.append(get_word_embedding(token_vecs_sum,i))
     else:
         word_embedding = get_word_embedding(token_vecs_sum,index)
 
