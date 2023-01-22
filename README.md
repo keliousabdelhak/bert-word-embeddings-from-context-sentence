@@ -22,3 +22,14 @@ print(embedding_2[0:5])
 > Output 2 : tensor([ 2.2381,  0.2831,  1.0606, -2.3082, -0.1782])
 
 As you can see, the same word has different embeddings depending on the context :+1:
+
+### 📝 If a sentence contains more than one word, you get them all by setting `all_index=True` .
+
+```python
+text = "After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank."
+word = "bank"
+
+embedding = get_word_embedding_from_sentence(text,word,all_index=True)
+print(embedding)
+```
+> Output : [embedding_1,embedding_2,embedding_3]
