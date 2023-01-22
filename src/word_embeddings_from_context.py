@@ -104,7 +104,3 @@ def get_word_embedding_from_sentence(text,word,all_index=False):
 
     return word_embedding
 
-
-#print(get_word_embedding_from_sentence("After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank.",'bank',all_index=True))
-show_word_index("After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank.")
-show_index_of_word_in_sentence("After stealing money from the bank vault, the bank robber was seen fishing on the Mississippi river bank.",'the')
