@@ -11,7 +11,7 @@ LONG_DESCRIPTION = 'A package that allows to build word embedding from context u
 
 # Setting up
 setup(
-    name="vidstream",
+    name="word-embeddings-from-context",
     version=VERSION,
     author="Abdelhak KELIOUS",
     description=DESCRIPTION,
