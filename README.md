@@ -1,4 +1,4 @@
-# bert-word-embeddings-from-context-sentence :shipit:
+# bert-word-embeddings-from-context-sentence 
 
 *One way to confirm contextually dependent vectors is by evaluating the model's performance on tasks that require understanding the meaning of words in context, such as natural language inference or question answering. Another way is to perform a qualitative analysis by comparing the embeddings generated for a specific word in different sentences or contexts, and observing if they are similar or dissimilar.*
 
